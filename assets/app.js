@@ -1,12 +1,18 @@
 var Menu = ""
 
-const unblockingBrower = 'https://manualcars.net'
+const unblockingBrower = 'https://accidentreturns.com';
 
 const AppInfo = "Crafterbot's Menu";
-const AppVersion = "1.0.0"
+const AppVersion = "1.0.0";
+const key = 'crafterbot9';
 const listOfCommands = `help - List commands    \n  gc - Warp to google classroom   \n  gd - Warp to google docs   \n  unblock - Opens unblocking brower   \n  y - Opens youtube   \n  t - Allows you to edit a webpage like a document(toggle)    \n  tips - Shows you tips for unblocking    \n  about - Shows info about the app and me.`;
 
-load();
+Menu = prompt(`\n ${AppInfo} - ${AppVersion} \n \n Security check \n \n Please fill out the password to continue.`);
+if (Menu === key) {
+    load();
+} else {
+    Menu = alert('Password incorrect. \n \n All attempts are logged. This device will be terminated if multiple failed security checks occur.')
+}
 function load() {
     Menu = prompt(`\n ${AppInfo} - ${AppVersion} \n \n Type help to see a list of commands.`);
     CheckPromptResults();
