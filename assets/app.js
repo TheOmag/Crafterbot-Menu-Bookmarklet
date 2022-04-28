@@ -4,8 +4,8 @@ const unblockingBrower = 'https://accidentreturns.com';
 
 const AppInfo = "Crafterbot's Menu";
 const AppVersion = "1.0.0";
-const key = 'crafterbot9';
-const listOfCommands = `help - List commands    \n  gc - Warp to google classroom   \n  gd - Warp to google docs   \n  unblock - Opens unblocking brower   \n  y - Opens youtube   \n  t - Allows you to edit a webpage like a document(toggle)    \n  tips - Shows you tips for unblocking    \n  about - Shows info about the app and me.`;
+const key = '9';
+const listOfCommands = `help - List commands    \n  gc - Warp to google classroom   \n  gd - Warp to google docs   \n  unblock - Opens unblocking brower   \n  y - Opens youtube   \n  t - Allows you to edit a webpage like a document(toggle)    \n  tips - Shows you tips for unblocking    \n  about - Shows info about the app and me.     \n      YB - Unblocks youtube videos that are blocked by your admin. `;
 
 Menu = prompt(`\n ${AppInfo} - ${AppVersion} \n \n Security check \n \n Please fill out the password to continue.`);
 if (Menu === key) {
@@ -61,6 +61,10 @@ function CheckPromptResults() {
         load();
     } else if (Menu === '' || Menu === ' ') {
         Menu.alert("Closing Menu");
+    } else if (Menu === 'yb' || Menu === 'Yb' || Menu === 'yB' || Menu === 'YB') {
+        var url = window.location.href
+
+        window.open(`https://www.youtube-nocookie.com/embed/${url.substr(url.length - (32 + 22), 32)}`)
     }
     else
     {
