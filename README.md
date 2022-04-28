@@ -12,10 +12,18 @@ To use go to a website(not a new tab) and click on the bookmark. Then type "craf
 # List of commands
 
 help - List commands
+
 gc - Warp to google classroom
+
 gd - Warp to google docs
+
 unblock - Opens unblocking brower
+
 y - Opens youtube
+
 t - Allows you to edit a webpage like a document(toggle)
-tips - Shows you tips for unblocking
+
+tips - Shows you tips for unblocking.
+
 about - Shows info about the app and me.
+
