@@ -7,7 +7,7 @@ To install create a new bookmark called 'Crafterbots Menu'. Copy the code from b
 
 # How to use
 
-To use go to a website(not a new tab) and click on the bookmark. Then type "crafterbot9" as the security code. Then type help for a list of commands.
+To use go to a website(not a new tab) and click on the bookmark. Then type "9" as the security code. Then type help for a list of commands.
 
 # List of commands
 
